@@ -1,0 +1,28 @@
+.movieRow{
+  margin-bottom: 30px;
+}
+
+.movieRow h2{
+  margin: 0px 0px 0px 30
+}
+
+/*area da lista - tudo o que passar da tela sera cortado -overflow x*/
+
+.movieRow--listarea{
+  overflow-x: hidden;
+}
+
+/*cada item ficara lado a lado */
+.movieRow--item{
+  display: inline-block;
+  width: 150px;
+}
+
+/*a imagem terá 100% da sua box */
+.movieRow--item img{
+  width: 100%;
+}
+
+.movieRow--list{
+  width: 999999px;
+}
