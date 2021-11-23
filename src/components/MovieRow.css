@@ -10,19 +10,26 @@
 
 .movieRow--listarea{
   overflow-x: hidden;
+  padding-left: 30px;
 }
 
 /*cada item ficara lado a lado */
 .movieRow--item{
   display: inline-block;
   width: 150px;
+  cursor: pointer;
 }
 
-/*a imagem terá 100% da sua box */
-.movieRow--item img{
-  width: 100%;
-}
 
 .movieRow--list{
   width: 999999px;
+}
+/*a imagem terá 100% da sua box -  e o transform  vai reduzir na escala só para possibilitar um efeito que vem abaixo (tipo zoom individual) */
+.movieRow--item img{
+  width: 100%;
+  transform:scale(0.9);
+  transition: all ease 0.3s;
+}
+.movieRow--item img:hover{
+  transform:scale(1) 
 }
