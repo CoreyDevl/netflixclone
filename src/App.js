@@ -24,9 +24,7 @@ return(
 <section className="lists">
   {movieList.map((item, key)=>(
   <MovieRow key={key} title={item.title} items={item.items}/>
-
-
- ))}
+  ))}
 </section>
   </div>
 )
