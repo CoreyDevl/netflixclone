@@ -24,6 +24,7 @@
 
 
 .movieRow--list{
+  width: 999999px;
   transition: all ease 0.5s;
 }
 /*a imagem terá 100% da sua box -  e o transform  vai reduzir na escala só para possibilitar um efeito que vem abaixo (tipo zoom individual) */
