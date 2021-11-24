@@ -12,3 +12,29 @@
   height: inherit;
   background: linear-gradient(to right, #111 30%, transparent 70%);
 }
+
+/*informações e dados*/
+
+.featured--name{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.featured--info{
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 26px;
+}
+
+.featured--point, 
+.featured--year, 
+.featured--seasons{
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.featured--points{
+  color: #46d369;
+}
+ 
