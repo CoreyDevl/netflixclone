@@ -1,16 +1,18 @@
 .movieRow{
-  margin-bottom: 30px;
+  font-size: 17px;
+  margin-top: 80px;
 }
 
 .movieRow h2{
-  margin: 0px 0px 0px 30
+   
+  margin: 0px 0px 0px 0px;
 }
 
 /*area da lista - tudo o que passar da tela sera cortado -overflow x*/
 
 .movieRow--listarea{
   overflow-x: hidden;
-  padding-left: 30px;
+  padding-left: 0px;
 }
 
 /*cada item ficara lado a lado */

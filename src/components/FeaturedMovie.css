@@ -5,12 +5,18 @@
 .featured--vertical{
   width: inherit;
   height: inherit;
-  background: linear-gradient(to top, #111 10%, transparent 90%);
+  background: linear-gradient(to top, black 10%, transparent 90%);
 }
 .featured--horizontal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-bottom:  160px;
+  padding-top: 110px;
   width: inherit;
   height: inherit;
-  background: linear-gradient(to right, #111 30%, transparent 70%);
+  background: linear-gradient(to right, black 30%, transparent 70%);
 }
 
 /*informações e dados*/
@@ -24,7 +30,7 @@
   font-size: 14px;
   font-weight: bold;
   margin-top: 15px;
-  line-height: 26px;
+  line-height: 22px;
 }
 
 .featured--point, 
@@ -37,4 +43,48 @@
 .featured--points{
   color: #46d369;
 }
- 
+
+.featured--description{
+  margin-top: 15px;
+  font-size: 15px;
+  color: #999;
+  max-width: 40%;
+}
+
+/*botoes*/
+
+.featured--buttons{
+  margin-top: 15px;
+}
+
+.featured--watchbtn, 
+.featured--mylistbtn{
+display: inline-block;
+font-size: 16px;
+font-weight: bold;
+padding: 10px 25px;
+border-radius: 5px;
+text-decoration: none;
+margin-right: 15px;
+opacity: 1;
+transition: all ease 0.4s;
+}
+
+.featured--watchbtn:hover, .featured--mylistbtn:hover{
+opacity: 70%;
+}
+.featured--watchbtn{
+  background-color: #fff;
+  color: #111;
+}
+
+.featured--mylistbtn{
+  background-color: #333;
+  color: #fff;
+}
+
+.featured--genres{
+  margin-top: 15px;
+  font-size: 14px;
+  color: #999;
+}
