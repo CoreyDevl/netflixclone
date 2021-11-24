@@ -15,3 +15,26 @@ body{
   padding-left: 30px;
   margin-top: -150px
 }
+
+footer{
+  padding: 25px;
+  background-color: #00000056;
+  font-size: 15px;
+  margin: 50px 0px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.loading{
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.5);
+  }

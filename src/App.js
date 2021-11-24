@@ -14,6 +14,7 @@ export default () => {
 
 
  useEffect(() => {
+  setTimeout(() => {
    const loadAll = async () => {
     //pegando lista total
     let list = await Tmdb.getHomeList()
@@ -28,7 +29,7 @@ export default () => {
    }
 
    loadAll()
-
+  }, 3000)
  }, []) 
 
  useEffect(()=>{
@@ -60,6 +61,20 @@ return(
   <MovieRow key={key} title={item.title} items={item.items}/>
   ))}
 </section>
+    <footer>
+      Feito por Corey Pages! sem fins lucrativos <br />
+      Repositório deste projeto: <br />
+      <a href="https://github.com/CoreyTattooArt/netflixclone">GitHub CoreyTattooArt</a> <br />
+      Objetivo final deste projeto: estudo em React <br />
+      Direitos de imagem para NETFLIX <br />
+      Fonte de dados: Themoviedb.org
+    </footer>
+
+    {movieList.length <=0 &&
+    <div className="loading">
+      <img src="https://onlinegiftools.com/images/examples-onlinegiftools/netflix-stream.gif" alt="carregando"/>
+    </div>
+    }
   </div>
 )
 }
